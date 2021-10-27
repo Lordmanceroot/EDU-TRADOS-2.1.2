@@ -15,7 +15,6 @@ a {
     color: inherit;
 }
 
-li,
 a:hover {
     transform: scale(1.1);
 }
@@ -215,8 +214,7 @@ span.logo {
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
     overflow-y: hidden;
     overflow-x: hidden;
     transition: all 0.3s cubic-bezier(0.55, 0.64, 0.61, 0.87) 0s;
@@ -224,7 +222,7 @@ span.logo {
 
 .popup:target {
     opacity: 1;
-    visibility: visible;
+
 }
 .popup-body {
     min-height: 100%;

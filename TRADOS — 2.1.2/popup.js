@@ -74,7 +74,7 @@ function clickOpen() {
     const open = document.querySelector("#open");
     const template1 = document.querySelector("#template1");
     const newOpen = template1.content.cloneNode(true);
-
+    open.appendChild(newOpen);
 
     popUp.forEach((current) => {
         const cards = document.querySelector(".popup-list");
@@ -98,6 +98,7 @@ function clickOpen() {
 
     })
     open.appendChild(newOpen);
+
 }
 function clickClose() {
     document.querySelector('.popup').remove();
